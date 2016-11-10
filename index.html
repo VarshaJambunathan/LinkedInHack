@@ -1,21 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>HOMEPAGE</title>
+	<title>Improved toolbar</title>
+	<style>
+		.selector {
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 35px;
+			width: 100%;
+			background-color: #333;			
+		}
+		.image {
+			width: 33px;
+			height: 33px;
+			padding: 0;
+		}
+		.searchbox{
+			left : 0;
+			top : 0;
+			width: 150px;
+			background-color: #111;
+			align-self: center;
+		}
+		.lower-header{
+			
+			height: 25px;
+			padding-top: 35px;
+		}
+		ul{
+			background-color: #929191;
+			list-style-type: none;
+		    margin: 0;
+		    padding: 0;
+		    overflow: hidden;
+		}
+		li{
+			float: left;
+			padding: 10px;
+		}
+
+
+	</style>
 </head>
 <body>
-
-<div id="header" class = "global-header responsive header nav-v5-2-header responsive-1 remote-nav" role = "banner"> ==$0
-	<div id="top-header">
-		<div class="wrapper">
-			<div class="header-section first-child">
-				<div class="header-section last-child">
-					::after
-				</div>
-			</div>
-		</div>
+	<div id="icon" class="selector">
+		<img src="logo.png" class="image">
+		
 	</div>
-</div>
+	<div class="lower-header">
+		<ul>
+			<li>HOME</li>
+			<li>PROFILE</li>
+		</ul>
+	</div>
+	<form class="searchbox">
+			<input type="text" placeholder="Search for people,jobs,companies, and more...">
+		</form>
 
 </body>
 </html>
