@@ -2,6 +2,12 @@
 <html>
 <head>
 	<title>Improved toolbar</title>
+	<link rel="shortcut icon" href="http://static.tmimgcdn.com/img/favicon.ico">
+  <link rel="icon" href="http://static.tmimgcdn.com/img/favicon.ico">
+  <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" media="all" href="css/jquery.circliful.css">
+  <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery.circliful.min.js"></script>
 	<style>
 		.selector {
 			position: fixed;
@@ -14,19 +20,22 @@
 		.image {
 			width: 33px;
 			height: 33px;
-			padding: 0;
+			padding: 200;
 		}
-		.searchbox{
+		/*.searchbox{
 			left : 0;
 			top : 0;
 			width: 150px;
 			background-color: #111;
 			align-self: center;
-		}
-		.lower-header{
-			
-			height: 25px;
+		}*/
+		#lower-header{
+			position: fixed;
+			top: 30px;
+			height: 10px;
 			padding-top: 35px;
+			width: 100%;
+			background-color: rgb(0,150,250);
 		}
 		ul{
 			background-color: #929191;
@@ -39,6 +48,126 @@
 			float: left;
 			padding: 10px;
 		}
+		h1 {
+			height: 25px;
+			color: #164364; 
+			position: absolute;
+			top: 100px;
+			left: 450px;
+			font-size: 30px;
+		
+			font-family: "Comic Sans MS";
+			font-style: oblique;
+			text-align: center;
+			z-index: -1;
+
+		}
+		h2 {
+			height: 25px;
+			color: #164364; 
+			position: absolute;
+			top: 350px;
+			left: 430px;
+			font-size: 30px;
+		
+			font-family: "Comic Sans MS";
+			font-style: oblique;
+			text-align: center;
+			z-index: -1;
+
+		}
+		h3 {
+			height: 25px;
+			color: #164364; 
+			position: absolute;
+			top: 900px;
+			left: 480px;
+			font-size: 30px;
+		
+			font-family: "Comic Sans MS";
+			font-style: oblique;
+			text-align: center;
+			z-index: -1;
+
+		}
+		h4 {
+			height: 25px;
+			color: #164364; 
+			position: absolute;
+			top: 1400px;
+			left: 490px;
+			font-size: 30px;
+		
+			font-family: "Comic Sans MS";
+			font-style: oblique;
+			text-align: center;
+			z-index: -1;
+
+		}
+		h5 {
+			height: 25px;
+			color: #164364; 
+			position: absolute;
+			top: 1950px;
+			left: 380px;
+			font-size: 30px;
+		
+			font-family: "Comic Sans MS";
+			font-style: oblique;
+			text-align: center;
+			z-index: -1;
+
+		}
+		h6 {height: 25px;
+			color: #164364; 
+			position: absolute;
+			top: 120px;
+			
+			font-size: 12px;
+			text-align: center;
+		
+			font-family: "Comic Sans MS";
+			font-style: oblique;
+			z-index: -1;
+
+		}
+		
+		.image2 {
+			width: 500px;
+			height: 500px;
+			padding: 200;
+			position: absolute;
+			top: 400px;
+			left: 400px;
+			z-index: -1;
+		}
+		.image3 {
+			width: 500px;
+			height: 500px;
+			padding: 200;
+			position: absolute;
+			top: 1430px;
+			left: 390px;
+			z-index: -1;
+		}
+		.image4 {
+			width: 500px;
+			height: 500px;
+			padding: 200;
+			position: absolute;
+			top: 2000px;
+			left: 390px;
+			z-index: -1;
+		}
+		.image5 {
+			width: 600px;
+			height: 600px;
+			padding: 200;
+			position: absolute;
+			top: 1000px;
+			left: 390px;
+			z-index: -1;
+		}
 
 
 	</style>
@@ -48,15 +177,132 @@
 		<img src="logo.png" class="image">
 		
 	</div>
-	<div class="lower-header">
-		<ul>
+	<div class="container" id='lower-header'>
+		<!--<ul>
 			<li>HOME</li>
 			<li>PROFILE</li>
-		</ul>
+		</ul>-->
 	</div>
-	<form class="searchbox">
+	<!--<form class="searchbox">
 			<input type="text" placeholder="Search for people,jobs,companies, and more...">
-		</form>
+		</form>-->
+<h1>Who Are LinkedIn Users???</h1>
+	
+	<h2>What Do They Do On LinkedIn?</h2>
 
-</body>
+	<div><img src="features_plot.jpg" class="image2">
+	</div>
+	<h3>Where do They Live??</h3>
+	<body>
+	<div class="image5">
+ <script type="text/javascript" src="https://maps.google.com/maps/api/js?v=3"></script>
+
+<script>
+  var key ='1eBK217zkWbAU0ym3X7gMfyYElZoUNX-z5MXbzYjT';
+  var interest;
+  function cs() {
+    interest='CS';
+        
+  }
+  function com(){
+   interest ='Finanace';
+   
+  }
+  function med(){
+
+   interest='Medical';
+
+  }
+  </script>
+</head>
+
+<body>
+
+<iframe id = "change" width="500" height="300" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col1+from+1eBK217zkWbAU0ym3X7gMfyYElZoUNX-z5MXbzYjT&amp;viz=MAP&amp;h=false&amp;lat=16.221953932314843&amp;lng=-170.99770349999994&amp;t=1&amp;z=1&amp;l=col1&amp;y=4&amp;tmplt=4&amp;hml=ONE_COL_LAT_LNG"></iframe>
+
+ <div class="header">
+  <input type="Button" name="cs" value="Compter Science" onclick="cs()"> </input>
+  <input type="Button" name="med" value="Medical" onclick="med()"></input>
+  <input type="Button" name="com" value="Commerce" onclick="com()"></input>
+</div>
+  
+  <select name = "navyOp" onchange="test(this);"> 
+    <option selected = "selected">Select State</option>
+    <option value = "?le de France">France</option>
+    <option value = "AE"></option>
+    <option value = "AL">Alabama</option>
+    <option value = "AR">Arkansas</option>
+    <option value = "AZ">Arizona</option>
+    <option value = "Andhra Pradesh">Andhra Pradesh</option>
+    <option value = "Bourgogne">Bourgogne</option>
+    <option value = "CA">California</option>
+    <option value = "CO">Colorado</option>
+    <option value = "CT">Conneticut</option>
+    <option value = "Catania">Catania</option>
+    <option value = "Centre">Centre</option>
+    <option value = "DC">District of Columbia</option>
+    <option value = "DE">Delaware</option>
+    <option value = "Delhi">Delhi</option>
+  
+</select>
+
+<script type="text/javascript">
+	window.test = function(e){
+  	var states = "https://fusiontables.google.com/embedviz?q=select+col1+from+1eBK217zkWbAU0ym3X7gMfyYElZoUNX-z5MXbzYjT+where+col2+%3D+'"+e.value+"'+and+col12+%3D+'"+interest+"'&viz=MAP&h=false&lat=16.221953932314843&lng=-170.99770349999994&t=1&z=1&l=col1&y=4&tmplt=4&hml=ONE_COL_LAT_LNG";
+  document.getElementById('change').src = states;
+  }
+ 
+
+
+</script>
+  <div id="googft-mapCanvas"></div>
+  </div>
+	<h4>Where Do They Work??</h4>
+	<div><img src="company.png" class="image3">
+	</div>
+	<h5>And They Have A Lot of  Experience!!! :O</h5>
+	<div><img src="experience_plot.jpg" class="image4">
+	</div>
+<div id="stats" class="clearfix" >
+    <div class="wrap">
+    <div class="row">
+      <div class="circle-container">
+        <h6>Working Professionals</h6>
+        <div class="circlestat" data-dimension="100" data-text="47%" data-width="20" data-fontsize="28" data-percent="47" data-fgcolor="#61a9dc" data-bgcolor="#eee" data-fill="#ddd"></div>
+      </div>
+ <div class="row">
+      <div class="circle-container">
+               <h6>     Managers</h6>
+        <div class="circlestat" data-dimension="100" data-text="19%" data-width="20" data-fontsize="28" data-percent="19" data-fgcolor="#61a9dc" data-bgcolor="#eee" data-fill="#ddd"></div>
+      </div>
+      
+      <div class="circle-container">
+                <h6>   Others</h6>
+        <div class="circlestat" data-dimension="100" data-text="53%" data-width="20" data-fontsize="28" data-percent="53" data-fgcolor="#61a9dc" data-bgcolor="#eee" data-fill="#ddd"></div>
+      </div>
+    </div>
+    </div><!-- @end .wrap -->
+  </div><!-- @end #stats -->
+<script type="text/javascript">
+$(function(){
+  $('.circlestat').circliful();
+});
+</script>
+<!--<input type="button" onclick="printDiv('printableArea')" value="print a div!" />
+<input type="text" name="name" id="name">
+<button type="button" id="home" onclick="validate()" value="checkvalue">
+
+<script type="text/javascript">
+	$('#id').click(function(){
+
+ $.ajax({
+   url: ""C:\Users\Sriparna Ghosh\Downloads\LinkedInHack\LinkedinHack.py"",
+   success: function(response) {
+     // here you do whatever you want with the response variable
+   }
+});
+
+
+</script>>-->
+	</body>
 </html>
